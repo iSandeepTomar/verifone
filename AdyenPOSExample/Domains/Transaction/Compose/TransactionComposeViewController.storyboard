@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wEC-Eg-hxf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Transaction Compose View Controller-->
+        <scene sceneID="lO1-fH-Yjb">
+            <objects>
+                <tableViewController id="wEC-Eg-hxf" customClass="TransactionComposeViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="NwP-1V-Cyl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="Loi-aL-DHD">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="92" id="l3R-pO-j3i">
+                                        <rect key="frame" x="0.0" y="35" width="375" height="92"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="l3R-pO-j3i" id="rG7-I8-U6G">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="91.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gsp-RA-wSZ" customClass="AmountField">
+                                                    <rect key="frame" x="8" y="8" width="359" height="76"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="54"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="gsp-RA-wSZ" firstAttribute="top" secondItem="rG7-I8-U6G" secondAttribute="topMargin" id="1j6-GM-dhZ"/>
+                                                <constraint firstItem="gsp-RA-wSZ" firstAttribute="trailing" secondItem="rG7-I8-U6G" secondAttribute="trailingMargin" id="mIa-yC-BeX"/>
+                                                <constraint firstItem="gsp-RA-wSZ" firstAttribute="bottom" secondItem="rG7-I8-U6G" secondAttribute="bottomMargin" id="vM2-R3-Fa6"/>
+                                                <constraint firstItem="gsp-RA-wSZ" firstAttribute="leading" secondItem="rG7-I8-U6G" secondAttribute="leadingMargin" id="vsM-XL-3sh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="pm4-J2-hMf">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="45" id="Z6g-90-k4k">
+                                        <rect key="frame" x="0.0" y="163" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z6g-90-k4k" id="gEy-Td-1l8">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fbV-MG-0FL">
+                                                    <rect key="frame" x="8" y="8" width="359" height="29"/>
+                                                    <segments>
+                                                        <segment title="Sale"/>
+                                                        <segment title="Refund"/>
+                                                    </segments>
+                                                </segmentedControl>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fbV-MG-0FL" firstAttribute="top" secondItem="gEy-Td-1l8" secondAttribute="topMargin" id="Jmb-hS-Y3y"/>
+                                                <constraint firstItem="fbV-MG-0FL" firstAttribute="trailing" secondItem="gEy-Td-1l8" secondAttribute="trailingMargin" id="XlZ-xs-JUD"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="fbV-MG-0FL" secondAttribute="bottom" constant="0.5" id="ZYJ-To-Y0w"/>
+                                                <constraint firstItem="fbV-MG-0FL" firstAttribute="leading" secondItem="gEy-Td-1l8" secondAttribute="leadingMargin" id="o2W-u4-GzF"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="wEC-Eg-hxf" id="Okd-j0-JN8"/>
+                            <outlet property="delegate" destination="wEC-Eg-hxf" id="VAP-ot-haS"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="amountField" destination="gsp-RA-wSZ" id="ea4-pS-VQa"/>
+                        <outlet property="transactionTypeControl" destination="fbV-MG-0FL" id="rla-Ha-KGw"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FYc-Wp-xC4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-292" y="20.239880059970016"/>
+        </scene>
+    </scenes>
+</document>

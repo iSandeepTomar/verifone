@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B514C1702EB45100CD9B5F6B /* Pods_AdyenPOSExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D023D3272C46AA869BC3FA /* Pods_AdyenPOSExample.framework */; };
+		E29896D51F6805350041F3FD /* ADYTransactionRequest+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = E29896D41F6805350041F3FD /* ADYTransactionRequest+Helpers.m */; };
+		E29896D91F69266F0041F3FD /* TransactionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29896D81F69266F0041F3FD /* TransactionsViewController.m */; };
+		E29896DC1F692C0C0041F3FD /* TransactionsViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E29896DB1F692C0C0041F3FD /* TransactionsViewDataSource.m */; };
+		E29896DF1F692C210041F3FD /* TransactionsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E29896DE1F692C210041F3FD /* TransactionsViewCell.m */; };
+		E29896E31F696C060041F3FD /* AmountFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = E29896E21F696C060041F3FD /* AmountFormatter.m */; };
+		E29896E71F6A5B940041F3FD /* DeviceDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29896E61F6A5B940041F3FD /* DeviceDataViewController.m */; };
+		E29896EA1F6A5E390041F3FD /* DeviceDataViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E29896E91F6A5E390041F3FD /* DeviceDataViewDataSource.m */; };
+		E29896ED1F6A5E5D0041F3FD /* DeviceDataViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E29896EC1F6A5E5D0041F3FD /* DeviceDataViewCell.m */; };
+		E29896F01F6A63F10041F3FD /* DeviceDataViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = E29896EF1F6A63F10041F3FD /* DeviceDataViewSection.m */; };
+		E29896F31F6A63FA0041F3FD /* DeviceDataViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E29896F21F6A63FA0041F3FD /* DeviceDataViewItem.m */; };
+		E29D4AFD1F66A330000FE60C /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29D4AFC1F66A330000FE60C /* ProgressViewController.m */; };
+		E29D4B001F66A414000FE60C /* ProgressViewStepCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E29D4AFF1F66A414000FE60C /* ProgressViewStepCell.m */; };
+		E29D4B041F66A8C2000FE60C /* DeviceBoardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29D4B031F66A8C2000FE60C /* DeviceBoardingViewController.m */; };
+		E29D4B081F66C556000FE60C /* TransactionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29D4B071F66C556000FE60C /* TransactionViewController.m */; };
+		E29D4B0C1F66C9AB000FE60C /* TransactionComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29D4B0B1F66C9AB000FE60C /* TransactionComposeViewController.m */; };
+		E29D4B0E1F66C9C3000FE60C /* TransactionComposeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29D4B0D1F66C9C3000FE60C /* TransactionComposeViewController.storyboard */; };
+		E29D4B121F66CC83000FE60C /* AmountField.m in Sources */ = {isa = PBXBuildFile; fileRef = E29D4B111F66CC83000FE60C /* AmountField.m */; };
+		E29D4B1C1F67CE66000FE60C /* TransactionStateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29D4B1A1F67CE66000FE60C /* TransactionStateViewController.m */; };
+		E29D4B1F1F67DDB1000FE60C /* TransactionStateViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29D4B1E1F67DDB1000FE60C /* TransactionStateViewController.storyboard */; };
+		E2A025F91F613937004171EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A025EE1F613937004171EC /* AppDelegate.m */; };
+		E2A025FA1F613937004171EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2A025F11F613937004171EC /* Assets.xcassets */; };
+		E2A025FB1F613937004171EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A025F21F613937004171EC /* LaunchScreen.storyboard */; };
+		E2A025FE1F613937004171EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A025F81F613937004171EC /* main.m */; };
+		E2A026071F613CA1004171EC /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A026061F613CA1004171EC /* RootViewController.m */; };
+		E2A0260B1F613E43004171EC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A0260A1F613E43004171EC /* LoginViewController.m */; };
+		E2A0260D1F613E53004171EC /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A0260C1F613E53004171EC /* LoginViewController.storyboard */; };
+		E2A026111F6147B8004171EC /* UIAlertController+Error.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A026101F6147B8004171EC /* UIAlertController+Error.m */; };
+		E2A026171F6164CB004171EC /* DeviceRegistryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A026161F6164CB004171EC /* DeviceRegistryViewController.m */; };
+		E2A0261A1F629880004171EC /* DeviceRegistryViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A026191F629880004171EC /* DeviceRegistryViewCell.m */; };
+		E2A0261D1F629A40004171EC /* NSStringFromADYDeviceStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A0261C1F629A40004171EC /* NSStringFromADYDeviceStatus.m */; };
+		E2A026201F62B998004171EC /* DeviceRegistryObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A0261F1F62B998004171EC /* DeviceRegistryObserver.m */; };
+		E2A026231F62BAF9004171EC /* DeviceRegistryViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A026221F62BAF9004171EC /* DeviceRegistryViewDataSource.m */; };
+		E2A026261F62E82F004171EC /* NSArray+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A026251F62E82F004171EC /* NSArray+Helpers.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		284296089B262309D22D2479 /* Pods-AdyenPOSExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdyenPOSExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdyenPOSExample/Pods-AdyenPOSExample.release.xcconfig"; sourceTree = "<group>"; };
+		C9F998308FDE243DC11123C9 /* Pods-AdyenPOSExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdyenPOSExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdyenPOSExample/Pods-AdyenPOSExample.debug.xcconfig"; sourceTree = "<group>"; };
+		D8D023D3272C46AA869BC3FA /* Pods_AdyenPOSExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdyenPOSExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E29896D31F6805350041F3FD /* ADYTransactionRequest+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ADYTransactionRequest+Helpers.h"; sourceTree = "<group>"; };
+		E29896D41F6805350041F3FD /* ADYTransactionRequest+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ADYTransactionRequest+Helpers.m"; sourceTree = "<group>"; };
+		E29896D71F69266F0041F3FD /* TransactionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionsViewController.h; sourceTree = "<group>"; };
+		E29896D81F69266F0041F3FD /* TransactionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionsViewController.m; sourceTree = "<group>"; };
+		E29896DA1F692C0C0041F3FD /* TransactionsViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionsViewDataSource.h; sourceTree = "<group>"; };
+		E29896DB1F692C0C0041F3FD /* TransactionsViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionsViewDataSource.m; sourceTree = "<group>"; };
+		E29896DD1F692C210041F3FD /* TransactionsViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionsViewCell.h; sourceTree = "<group>"; };
+		E29896DE1F692C210041F3FD /* TransactionsViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionsViewCell.m; sourceTree = "<group>"; };
+		E29896E11F696C060041F3FD /* AmountFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmountFormatter.h; sourceTree = "<group>"; };
+		E29896E21F696C060041F3FD /* AmountFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmountFormatter.m; sourceTree = "<group>"; };
+		E29896E51F6A5B940041F3FD /* DeviceDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceDataViewController.h; sourceTree = "<group>"; };
+		E29896E61F6A5B940041F3FD /* DeviceDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceDataViewController.m; sourceTree = "<group>"; };
+		E29896E81F6A5E390041F3FD /* DeviceDataViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceDataViewDataSource.h; sourceTree = "<group>"; };
+		E29896E91F6A5E390041F3FD /* DeviceDataViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceDataViewDataSource.m; sourceTree = "<group>"; };
+		E29896EB1F6A5E5D0041F3FD /* DeviceDataViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceDataViewCell.h; sourceTree = "<group>"; };
+		E29896EC1F6A5E5D0041F3FD /* DeviceDataViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceDataViewCell.m; sourceTree = "<group>"; };
+		E29896EE1F6A63F10041F3FD /* DeviceDataViewSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceDataViewSection.h; sourceTree = "<group>"; };
+		E29896EF1F6A63F10041F3FD /* DeviceDataViewSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceDataViewSection.m; sourceTree = "<group>"; };
+		E29896F11F6A63FA0041F3FD /* DeviceDataViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceDataViewItem.h; sourceTree = "<group>"; };
+		E29896F21F6A63FA0041F3FD /* DeviceDataViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceDataViewItem.m; sourceTree = "<group>"; };
+		E29D4AFB1F66A330000FE60C /* ProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressViewController.h; sourceTree = "<group>"; };
+		E29D4AFC1F66A330000FE60C /* ProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressViewController.m; sourceTree = "<group>"; };
+		E29D4AFE1F66A414000FE60C /* ProgressViewStepCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressViewStepCell.h; sourceTree = "<group>"; };
+		E29D4AFF1F66A414000FE60C /* ProgressViewStepCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressViewStepCell.m; sourceTree = "<group>"; };
+		E29D4B021F66A8C2000FE60C /* DeviceBoardingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceBoardingViewController.h; sourceTree = "<group>"; };
+		E29D4B031F66A8C2000FE60C /* DeviceBoardingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceBoardingViewController.m; sourceTree = "<group>"; };
+		E29D4B061F66C556000FE60C /* TransactionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionViewController.h; sourceTree = "<group>"; };
+		E29D4B071F66C556000FE60C /* TransactionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionViewController.m; sourceTree = "<group>"; };
+		E29D4B0A1F66C9AB000FE60C /* TransactionComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionComposeViewController.h; sourceTree = "<group>"; };
+		E29D4B0B1F66C9AB000FE60C /* TransactionComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionComposeViewController.m; sourceTree = "<group>"; };
+		E29D4B0D1F66C9C3000FE60C /* TransactionComposeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TransactionComposeViewController.storyboard; sourceTree = "<group>"; };
+		E29D4B101F66CC83000FE60C /* AmountField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmountField.h; sourceTree = "<group>"; };
+		E29D4B111F66CC83000FE60C /* AmountField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmountField.m; sourceTree = "<group>"; };
+		E29D4B191F67CE66000FE60C /* TransactionStateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionStateViewController.h; sourceTree = "<group>"; };
+		E29D4B1A1F67CE66000FE60C /* TransactionStateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionStateViewController.m; sourceTree = "<group>"; };
+		E29D4B1E1F67DDB1000FE60C /* TransactionStateViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TransactionStateViewController.storyboard; sourceTree = "<group>"; };
+		E2A025D21F61387B004171EC /* AdyenPOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdyenPOSExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2A025ED1F613937004171EC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E2A025EE1F613937004171EC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E2A025F11F613937004171EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2A025F31F613937004171EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E2A025F61F613937004171EC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2A025F81F613937004171EC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E2A026051F613CA1004171EC /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		E2A026061F613CA1004171EC /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		E2A026091F613E43004171EC /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		E2A0260A1F613E43004171EC /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		E2A0260C1F613E53004171EC /* LoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		E2A0260F1F6147B8004171EC /* UIAlertController+Error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Error.h"; sourceTree = "<group>"; };
+		E2A026101F6147B8004171EC /* UIAlertController+Error.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Error.m"; sourceTree = "<group>"; };
+		E2A026151F6164CB004171EC /* DeviceRegistryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceRegistryViewController.h; sourceTree = "<group>"; };
+		E2A026161F6164CB004171EC /* DeviceRegistryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceRegistryViewController.m; sourceTree = "<group>"; };
+		E2A026181F629880004171EC /* DeviceRegistryViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceRegistryViewCell.h; sourceTree = "<group>"; };
+		E2A026191F629880004171EC /* DeviceRegistryViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceRegistryViewCell.m; sourceTree = "<group>"; };
+		E2A0261B1F629A40004171EC /* NSStringFromADYDeviceStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringFromADYDeviceStatus.h; sourceTree = "<group>"; };
+		E2A0261C1F629A40004171EC /* NSStringFromADYDeviceStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringFromADYDeviceStatus.m; sourceTree = "<group>"; };
+		E2A0261E1F62B998004171EC /* DeviceRegistryObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceRegistryObserver.h; sourceTree = "<group>"; };
+		E2A0261F1F62B998004171EC /* DeviceRegistryObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceRegistryObserver.m; sourceTree = "<group>"; };
+		E2A026211F62BAF9004171EC /* DeviceRegistryViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceRegistryViewDataSource.h; sourceTree = "<group>"; };
+		E2A026221F62BAF9004171EC /* DeviceRegistryViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceRegistryViewDataSource.m; sourceTree = "<group>"; };
+		E2A026241F62E82F004171EC /* NSArray+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Helpers.h"; sourceTree = "<group>"; };
+		E2A026251F62E82F004171EC /* NSArray+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Helpers.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2A025CF1F61387B004171EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B514C1702EB45100CD9B5F6B /* Pods_AdyenPOSExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		494B0487B65B3CF5B63006FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9F998308FDE243DC11123C9 /* Pods-AdyenPOSExample.debug.xcconfig */,
+				284296089B262309D22D2479 /* Pods-AdyenPOSExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E29896D61F69265F0041F3FD /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				E29896D71F69266F0041F3FD /* TransactionsViewController.h */,
+				E29896D81F69266F0041F3FD /* TransactionsViewController.m */,
+				E29896DA1F692C0C0041F3FD /* TransactionsViewDataSource.h */,
+				E29896DB1F692C0C0041F3FD /* TransactionsViewDataSource.m */,
+				E29896DD1F692C210041F3FD /* TransactionsViewCell.h */,
+				E29896DE1F692C210041F3FD /* TransactionsViewCell.m */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		E29896E01F696BFD0041F3FD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E29896E11F696C060041F3FD /* AmountFormatter.h */,
+				E29896E21F696C060041F3FD /* AmountFormatter.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E29896E41F6976F30041F3FD /* Device Data */ = {
+			isa = PBXGroup;
+			children = (
+				E29896E51F6A5B940041F3FD /* DeviceDataViewController.h */,
+				E29896E61F6A5B940041F3FD /* DeviceDataViewController.m */,
+				E29896E81F6A5E390041F3FD /* DeviceDataViewDataSource.h */,
+				E29896E91F6A5E390041F3FD /* DeviceDataViewDataSource.m */,
+				E29896EB1F6A5E5D0041F3FD /* DeviceDataViewCell.h */,
+				E29896EC1F6A5E5D0041F3FD /* DeviceDataViewCell.m */,
+				E29896EE1F6A63F10041F3FD /* DeviceDataViewSection.h */,
+				E29896EF1F6A63F10041F3FD /* DeviceDataViewSection.m */,
+				E29896F11F6A63FA0041F3FD /* DeviceDataViewItem.h */,
+				E29896F21F6A63FA0041F3FD /* DeviceDataViewItem.m */,
+			);
+			path = "Device Data";
+			sourceTree = "<group>";
+		};
+		E29D4AFA1F66A31C000FE60C /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				E29D4AFB1F66A330000FE60C /* ProgressViewController.h */,
+				E29D4AFC1F66A330000FE60C /* ProgressViewController.m */,
+				E29D4AFE1F66A414000FE60C /* ProgressViewStepCell.h */,
+				E29D4AFF1F66A414000FE60C /* ProgressViewStepCell.m */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		E29D4B011F66A8B6000FE60C /* Device Boarding */ = {
+			isa = PBXGroup;
+			children = (
+				E29D4B021F66A8C2000FE60C /* DeviceBoardingViewController.h */,
+				E29D4B031F66A8C2000FE60C /* DeviceBoardingViewController.m */,
+			);
+			path = "Device Boarding";
+			sourceTree = "<group>";
+		};
+		E29D4B051F66C3FA000FE60C /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				E29D4B091F66C984000FE60C /* Compose */,
+				E29D4B131F67CE18000FE60C /* State */,
+				E29D4B061F66C556000FE60C /* TransactionViewController.h */,
+				E29D4B071F66C556000FE60C /* TransactionViewController.m */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		E29D4B091F66C984000FE60C /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				E29D4B0A1F66C9AB000FE60C /* TransactionComposeViewController.h */,
+				E29D4B0B1F66C9AB000FE60C /* TransactionComposeViewController.m */,
+				E29D4B0D1F66C9C3000FE60C /* TransactionComposeViewController.storyboard */,
+			);
+			path = Compose;
+			sourceTree = "<group>";
+		};
+		E29D4B0F1F66CC75000FE60C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E29D4B101F66CC83000FE60C /* AmountField.h */,
+				E29D4B111F66CC83000FE60C /* AmountField.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E29D4B131F67CE18000FE60C /* State */ = {
+			isa = PBXGroup;
+			children = (
+				E29D4B191F67CE66000FE60C /* TransactionStateViewController.h */,
+				E29D4B1A1F67CE66000FE60C /* TransactionStateViewController.m */,
+				E29D4B1E1F67DDB1000FE60C /* TransactionStateViewController.storyboard */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		E2A025C91F61387B004171EC = {
+			isa = PBXGroup;
+			children = (
+				E2A025D41F61387B004171EC /* AdyenPOSExample */,
+				E2A025D31F61387B004171EC /* Products */,
+				494B0487B65B3CF5B63006FB /* Pods */,
+				E948BB078B733D52A405F7DA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E2A025D31F61387B004171EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2A025D21F61387B004171EC /* AdyenPOSExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2A025D41F61387B004171EC /* AdyenPOSExample */ = {
+			isa = PBXGroup;
+			children = (
+				E2A025EC1F613937004171EC /* Application */,
+				E2A025EF1F613937004171EC /* Domains */,
+				E29D4B0F1F66CC75000FE60C /* Views */,
+				E29896E01F696BFD0041F3FD /* Utilities */,
+				E2A0260E1F6147A7004171EC /* Helpers */,
+				E2A025F01F613937004171EC /* Resources */,
+				E2A025F71F613937004171EC /* Supporting Files */,
+			);
+			path = AdyenPOSExample;
+			sourceTree = "<group>";
+		};
+		E2A025EC1F613937004171EC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E2A025ED1F613937004171EC /* AppDelegate.h */,
+				E2A025EE1F613937004171EC /* AppDelegate.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E2A025EF1F613937004171EC /* Domains */ = {
+			isa = PBXGroup;
+			children = (
+				E2A026041F613C8C004171EC /* Root */,
+				E2A026081F613DA3004171EC /* Login */,
+				E2A026141F61647D004171EC /* Device Registry */,
+				E29D4B011F66A8B6000FE60C /* Device Boarding */,
+				E29896E41F6976F30041F3FD /* Device Data */,
+				E29D4B051F66C3FA000FE60C /* Transaction */,
+				E29896D61F69265F0041F3FD /* Transactions */,
+				E29D4AFA1F66A31C000FE60C /* Progress */,
+			);
+			path = Domains;
+			sourceTree = "<group>";
+		};
+		E2A025F01F613937004171EC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E2A025F11F613937004171EC /* Assets.xcassets */,
+				E2A025F21F613937004171EC /* LaunchScreen.storyboard */,
+				E2A025F61F613937004171EC /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E2A025F71F613937004171EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2A025F81F613937004171EC /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2A026041F613C8C004171EC /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				E2A026051F613CA1004171EC /* RootViewController.h */,
+				E2A026061F613CA1004171EC /* RootViewController.m */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		E2A026081F613DA3004171EC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E2A026091F613E43004171EC /* LoginViewController.h */,
+				E2A0260A1F613E43004171EC /* LoginViewController.m */,
+				E2A0260C1F613E53004171EC /* LoginViewController.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E2A0260E1F6147A7004171EC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E2A0260F1F6147B8004171EC /* UIAlertController+Error.h */,
+				E2A026101F6147B8004171EC /* UIAlertController+Error.m */,
+				E2A026241F62E82F004171EC /* NSArray+Helpers.h */,
+				E2A026251F62E82F004171EC /* NSArray+Helpers.m */,
+				E29896D31F6805350041F3FD /* ADYTransactionRequest+Helpers.h */,
+				E29896D41F6805350041F3FD /* ADYTransactionRequest+Helpers.m */,
+				E2A0261B1F629A40004171EC /* NSStringFromADYDeviceStatus.h */,
+				E2A0261C1F629A40004171EC /* NSStringFromADYDeviceStatus.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E2A026141F61647D004171EC /* Device Registry */ = {
+			isa = PBXGroup;
+			children = (
+				E2A026151F6164CB004171EC /* DeviceRegistryViewController.h */,
+				E2A026161F6164CB004171EC /* DeviceRegistryViewController.m */,
+				E2A026211F62BAF9004171EC /* DeviceRegistryViewDataSource.h */,
+				E2A026221F62BAF9004171EC /* DeviceRegistryViewDataSource.m */,
+				E2A026181F629880004171EC /* DeviceRegistryViewCell.h */,
+				E2A026191F629880004171EC /* DeviceRegistryViewCell.m */,
+				E2A0261E1F62B998004171EC /* DeviceRegistryObserver.h */,
+				E2A0261F1F62B998004171EC /* DeviceRegistryObserver.m */,
+			);
+			path = "Device Registry";
+			sourceTree = "<group>";
+		};
+		E948BB078B733D52A405F7DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8D023D3272C46AA869BC3FA /* Pods_AdyenPOSExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2A025D11F61387B004171EC /* AdyenPOSExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2A025E91F61387B004171EC /* Build configuration list for PBXNativeTarget "AdyenPOSExample" */;
+			buildPhases = (
+				E4D90DE963AAF72ECC58E01C /* [CP] Check Pods Manifest.lock */,
+				E2A025CE1F61387B004171EC /* Sources */,
+				E2A025CF1F61387B004171EC /* Frameworks */,
+				E2A025D01F61387B004171EC /* Resources */,
+				303056CE1DFA5B9D232A2D96 /* [CP] Embed Pods Frameworks */,
+				1C3226F56A8F56CBF0178602 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdyenPOSExample;
+			productName = AdyenPOSExample;
+			productReference = E2A025D21F61387B004171EC /* AdyenPOSExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2A025CA1F61387B004171EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Adyen;
+				TargetAttributes = {
+					E2A025D11F61387B004171EC = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = E2A025CD1F61387B004171EC /* Build configuration list for PBXProject "AdyenPOSExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2A025C91F61387B004171EC;
+			productRefGroup = E2A025D31F61387B004171EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2A025D11F61387B004171EC /* AdyenPOSExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2A025D01F61387B004171EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2A0260D1F613E53004171EC /* LoginViewController.storyboard in Resources */,
+				E29D4B0E1F66C9C3000FE60C /* TransactionComposeViewController.storyboard in Resources */,
+				E2A025FA1F613937004171EC /* Assets.xcassets in Resources */,
+				E29D4B1F1F67DDB1000FE60C /* TransactionStateViewController.storyboard in Resources */,
+				E2A025FB1F613937004171EC /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C3226F56A8F56CBF0178602 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AdyenPOSExample/Pods-AdyenPOSExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		303056CE1DFA5B9D232A2D96 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AdyenPOSExample/Pods-AdyenPOSExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AdyenToolkit/AdyenToolkit.framework",
+				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/libextobjc/libextobjc.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AdyenToolkit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libextobjc.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AdyenPOSExample/Pods-AdyenPOSExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4D90DE963AAF72ECC58E01C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdyenPOSExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2A025CE1F61387B004171EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2A0260B1F613E43004171EC /* LoginViewController.m in Sources */,
+				E2A026261F62E82F004171EC /* NSArray+Helpers.m in Sources */,
+				E2A026171F6164CB004171EC /* DeviceRegistryViewController.m in Sources */,
+				E2A025FE1F613937004171EC /* main.m in Sources */,
+				E29D4B121F66CC83000FE60C /* AmountField.m in Sources */,
+				E29896DF1F692C210041F3FD /* TransactionsViewCell.m in Sources */,
+				E29896E71F6A5B940041F3FD /* DeviceDataViewController.m in Sources */,
+				E29896EA1F6A5E390041F3FD /* DeviceDataViewDataSource.m in Sources */,
+				E29896ED1F6A5E5D0041F3FD /* DeviceDataViewCell.m in Sources */,
+				E2A026201F62B998004171EC /* DeviceRegistryObserver.m in Sources */,
+				E29D4B1C1F67CE66000FE60C /* TransactionStateViewController.m in Sources */,
+				E29896F31F6A63FA0041F3FD /* DeviceDataViewItem.m in Sources */,
+				E2A026111F6147B8004171EC /* UIAlertController+Error.m in Sources */,
+				E2A025F91F613937004171EC /* AppDelegate.m in Sources */,
+				E29896D51F6805350041F3FD /* ADYTransactionRequest+Helpers.m in Sources */,
+				E29896F01F6A63F10041F3FD /* DeviceDataViewSection.m in Sources */,
+				E29D4AFD1F66A330000FE60C /* ProgressViewController.m in Sources */,
+				E29D4B0C1F66C9AB000FE60C /* TransactionComposeViewController.m in Sources */,
+				E29D4B081F66C556000FE60C /* TransactionViewController.m in Sources */,
+				E29896E31F696C060041F3FD /* AmountFormatter.m in Sources */,
+				E2A026231F62BAF9004171EC /* DeviceRegistryViewDataSource.m in Sources */,
+				E2A026071F613CA1004171EC /* RootViewController.m in Sources */,
+				E29896DC1F692C0C0041F3FD /* TransactionsViewDataSource.m in Sources */,
+				E2A0261D1F629A40004171EC /* NSStringFromADYDeviceStatus.m in Sources */,
+				E29D4B001F66A414000FE60C /* ProgressViewStepCell.m in Sources */,
+				E29D4B041F66A8C2000FE60C /* DeviceBoardingViewController.m in Sources */,
+				E2A0261A1F629880004171EC /* DeviceRegistryViewCell.m in Sources */,
+				E29896D91F69266F0041F3FD /* TransactionsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E2A025F21F613937004171EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2A025F31F613937004171EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E2A025E71F61387B004171EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E2A025E81F61387B004171EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2A025EA1F61387B004171EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9F998308FDE243DC11123C9 /* Pods-AdyenPOSExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/AdyenPOSExample/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adyen.AdyenPOSExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		E2A025EB1F61387B004171EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 284296089B262309D22D2479 /* Pods-AdyenPOSExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/AdyenPOSExample/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adyen.AdyenPOSExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2A025CD1F61387B004171EC /* Build configuration list for PBXProject "AdyenPOSExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2A025E71F61387B004171EC /* Debug */,
+				E2A025E81F61387B004171EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2A025E91F61387B004171EC /* Build configuration list for PBXNativeTarget "AdyenPOSExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2A025EA1F61387B004171EC /* Debug */,
+				E2A025EB1F61387B004171EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2A025CA1F61387B004171EC /* Project object */;
+}
